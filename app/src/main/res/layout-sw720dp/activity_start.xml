@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="160dp"
+            android:layout_height="160dp" />
+
+        <TextView
+            fontPath="fonts/Roboto-Light.ttf"
+            android:text="FREE CASH"
+            android:textSize="36sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            fontPath="fonts/Roboto-Bold.ttf"
+            android:text="&amp; Gift Cards"
+            android:textSize="36sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/login"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/btn_login"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/register"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/btn_signup"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginBottom="4dp"
+        android:layout_centerHorizontal="true"
+        android:text="This app is not associated or affiliated with Xbox"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

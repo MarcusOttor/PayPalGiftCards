@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="130dp"
+    android:minHeight="130dp"
+    android:minWidth="300dp"
+    android:maxHeight="130dp"
+    android:maxWidth="300dp"
+    android:background="@color/colorBackground"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/promocodeTxt"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:hint="Invite code"
+        android:lines="1"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="end"
+                android:id="@+id/skip"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:text="SKIP"
+                android:textColor="@color/colorBackground" />
+
+            <Button
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:id="@+id/enter"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackground"
+                android:text="ENTER"
+                android:textColor="@color/colorBackground" />
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+</LinearLayout>

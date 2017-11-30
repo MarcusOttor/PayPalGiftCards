@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorBackground">
+
+    <include layout="@layout/toolbar_back"/>
+
+    <ScrollView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/redeem_card"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/card_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                fontPath="fonts/Roboto-Bold.ttf"
+                android:text="Your PayPal email address:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                fontPath="fonts/Roboto-Bold.ttf"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/emailText"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:textSize="20sp"
+                android:paddingEnd="8dp"
+                android:gravity="center"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="email@example.com"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_field"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp" />
+
+            <Button
+                android:id="@+id/redeemBtn"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/redeem_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/hints_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <include layout="@layout/banner" />
+    </LinearLayout>
+</FrameLayout>

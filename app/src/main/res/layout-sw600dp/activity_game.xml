@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                fontPath="fonts/Roboto-Bold.ttf"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:text="tap the ticket to get\nfree coins"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/life1"
+                    android:src="@drawable/heart_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/life2"
+                    android:src="@drawable/heart_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/life3"
+                    android:src="@drawable/heart_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ticket1"
+                        android:src="@drawable/ticket_empty"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/ticket2"
+                        android:src="@drawable/ticket_empty"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/ticket3"
+                        android:src="@drawable/ticket_empty"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ticket4"
+                        android:src="@drawable/ticket_empty"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/ticket5"
+                        android:src="@drawable/ticket_empty"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/ticket6"
+                        android:src="@drawable/ticket_empty"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                fontPath="fonts/Roboto-Bold.ttf"
+                android:text="4:13:45"
+                android:textSize="20sp"
+                android:id="@+id/timer"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <include layout="@layout/banner" />
+    </LinearLayout>
+</FrameLayout>

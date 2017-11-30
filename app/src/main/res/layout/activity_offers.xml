@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorBackground">
+
+    <include layout="@layout/toolbar_back" />
+
+    <ScrollView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bestOffers"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/offer_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/awesomeOffers"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/offer_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/offersChest"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/offer_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/bestVideo"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/offer_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/fantasticVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/offer_7" />
+
+            <ImageView
+                android:id="@+id/beautifulVideo"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/offer_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/brilliantVideo"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/offer_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/coolVideo"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/offer_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <include layout="@layout/banner" />
+    </LinearLayout>
+
+</FrameLayout>

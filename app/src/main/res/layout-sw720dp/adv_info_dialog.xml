@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="220dp"
+    android:layout_height="140dp"
+    android:minHeight="140dp"
+    android:background="@color/colorPrimary"
+    android:maxHeight="140dp"
+    android:maxWidth="220dp"
+    android:minWidth="220dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <TextView
+        android:paddingRight="8dp"
+        android:paddingEnd="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:textColor="@android:color/white"
+        android:paddingStart="8dp"
+        android:id="@+id/alert"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_width="220dp"
+        />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_gravity="bottom"
+        android:layout_width="220dp"
+        android:background="@android:color/transparent"
+        android:layout_height="40dp">
+    <LinearLayout
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:weightSum="1"
+        android:background="?attr/selectableItemBackground">
+
+        <Button
+            android:layout_weight="0.5"
+            android:background="?attr/selectableItemBackground"
+            android:layout_gravity="center_horizontal|bottom"
+            android:id="@+id/cancel"
+            android:textColor="@android:color/white"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:text="No"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:layout_weight="0.5"
+            android:text="Yes"
+            android:layout_gravity="center_horizontal|bottom"
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackground"
+            android:textSize="16sp" />
+    </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+</FrameLayout>

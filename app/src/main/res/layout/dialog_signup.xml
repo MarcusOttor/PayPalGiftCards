@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:minHeight="250dp"
+    android:minWidth="300dp"
+    android:maxHeight="250dp"
+    android:maxWidth="300dp"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/usernameTxt"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="Username"
+        android:lines="1"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <EditText
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/passwordTxt"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <EditText
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/confirmPassTxt"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="Confirm"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:maxLength="40"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="end"
+            android:id="@+id/signupCancel"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:text="CANCEL"
+            android:textColor="@color/colorBackground" />
+
+        <Button
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:id="@+id/signup"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:text="SIGNUP"
+            android:textColor="@color/colorBackground" />
+    </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+</LinearLayout>

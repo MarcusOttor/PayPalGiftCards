@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="220dp"
+    android:layout_height="140dp"
+    android:minHeight="140dp"
+    android:maxHeight="140dp"
+    android:maxWidth="220dp"
+    android:minWidth="220dp"
+    android:background="@color/colorPrimary"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <TextView
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/alert"
+        android:textSize="16sp"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:textColor="@android:color/white"
+        android:paddingRight="8dp"
+        android:paddingEnd="8dp"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:layout_width="220dp"
+        android:layout_height="40dp">
+    <Button
+        android:text="Ok"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:id="@+id/ok"/>
+    </android.support.design.widget.AppBarLayout>
+</FrameLayout>

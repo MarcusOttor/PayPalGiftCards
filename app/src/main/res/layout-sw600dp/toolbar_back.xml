@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_bar_bg"
+    android:elevation="8dp"
+    android:layout_height="?attr/actionBarSize"
+    app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay">
+
+    <ImageView
+        android:id="@+id/addCoinsText"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:src="@drawable/arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <TextView
+        fontPath="fonts/Roboto-Bold.ttf"
+        android:id="@+id/toolbarText"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:text="Earn Coins"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/toolbarCoinImage"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:src="@drawable/coin"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="40dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/coinsView"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/toolbarCoinImage"
+        android:layout_toStartOf="@id/toolbarCoinImage"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</RelativeLayout>
