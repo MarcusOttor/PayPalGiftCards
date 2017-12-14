@@ -73,6 +73,12 @@ class AdvertisementManager {
     fun onResume(activity: Activity, thread: Boolean) {
         if (!resuming) {
             resuming = true
+            try {
+                if (fyber != null) {
+                    fyber?.onResume(activity as AppCompatActivity)
+                }
+            } catch (ex: Exception) {
+            }
             if (thread) {
                 Thread { resume(activity) }.start()
             } else {
